@@ -1,0 +1,33 @@
+body{
+    background:#808080;
+}
+.calculator{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);/*move me leftwards by 50% of my width, along the x-axis, and
+    move me upwards by 50% of my height, along the y-axis */
+}
+button{
+    height:60px;
+    width:60px;
+    margin:2px;
+    border:none;
+    border-radius:3px;
+    background: #56a79a;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+}
+button:hover{
+    background:#000;
+}
+.textview{
+    width:248px;
+    height: 70px;
+    margin:5px;
+    padding:8px;
+    font-size:24px;
+    border:none;
+    border-radius:3px;
+}

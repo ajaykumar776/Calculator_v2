@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <title>JavaScript Event</title>
+</head>
+<body>
+   
+    <div class="calculator">
+        <form action="" name="form">
+            <input class="textview" type="text" name="textview" />
+        </form>
+        <table>
+            <tr>
+                <td><button onclick="clean()">C</button></td>
+                <td><button onclick="back()">CE</button></td>
+                <td><button onclick="insert('/')">/</button></td>
+                <td><button onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(7)">7</button></td>
+                <td><button onclick="insert(8)">8</button></td>
+                <td><button onclick="insert(9)">9</button></td>
+                <td><button onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(4)">4</button></td>
+                <td><button onclick="insert(5)">5</button></td>
+                <td><button onclick="insert(6)">6</button></td>
+                <td rowspan="2"><button style="height:125px" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(1)">1</button></td>
+                <td><button onclick="insert(2)">2</button></td>
+                <td><button onclick="insert(3)">3</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width:125px" onclick="insert(0)">0</button></td>
+                <td><button onclick="insert('.')">.</button></td>
+                <td><button onclick="equal()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
